@@ -1,0 +1,96 @@
+/* @import url("https://fonts.googleapis.com/css?family=Roboto|Tangerine"); */
+
+:root {
+    --primary-color: green;
+    --secondary-color: red;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+a:hover {
+    color: var(--secondary-color)
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+#mf, #d {
+    color: var(--primary-color);
+    font-style: italic;
+    font-size: 40px;
+}
+#and {
+    color: var(--secondary-color);
+    font-style: italic;
+    font-size: 30px;
+}
+
+nav {
+    display: flex;
+    align-content: space-between;
+    justify-content: space-between;
+    box-shadow: 1px 1px 1px var(--primary-color);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+#navlinks {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+}
+.navitems {
+    margin-left: 20px;
+}
+
+#toggle-bar{
+    height: 30px;
+    width: 35px;
+    margin-top: 5px;
+    margin-right: 2px;;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: solid green 2px;
+}
+
+.bar{
+    height: 6px;
+    width: 100%;
+    border-radius: 10px;
+    border: solid green 3px;
+    background-color: green;
+}
+
+@media (max-width: 600px) {
+    #navlinks {
+        display: none;
+    }
+}
+
+@media (min-width: 1050px) {
+    #toggle-bar {
+        display: none;
+    }
+    #navlinks {
+        margin-right: 50px;
+    }
+}
