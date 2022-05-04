@@ -56,11 +56,19 @@ nav {
     justify-items: center;
 }
 
-.navlinks-small-screen {
-    display: flex;
+.navlinksHide {
+    display: none;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+}
+
+.navlinksToggled {
+    display: flex;;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1% auto auto 50%;
 }
 
 .navitems-big {
@@ -96,9 +104,6 @@ nav {
     .navlinks-big-screen {
         display: none;
     }
-    .navlinks-small-screen {
-        margin: 1% auto auto 50%;
-    }
 }
 
 @media (min-width: 1050px) {
@@ -107,8 +112,5 @@ nav {
     }
     .navlinks-big-screen {
         margin-right: 50px;
-    }
-    .navlinks-small-screen {
-        display: none;
     }
 }
